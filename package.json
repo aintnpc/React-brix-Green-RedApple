@@ -1,0 +1,32 @@
+{
+  "name": "brix",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.32.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "green": "pnpm --filter green-apple start",
+    "red": "pnpm --filter red-apple start",
+    "build:shared": "pnpm --filter @repo/shared build",
+    "build:ui": "pnpm --filter @repo/ui build",
+    "build:theme": "pnpm --filter @repo/theme build",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "expo": "~54.0.33",
+    "expo-blur": "^55.0.14",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-purchases": "^10.0.1",
+    "react-native-view-shot": "^4.0.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "react-native": "0.81.5"
+    }
+  }
+}

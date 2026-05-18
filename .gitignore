@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Expo / React Native
+.expo/
+dist/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# iOS
+ios/Pods/
+ios/build/
+apps/*/ios/Pods/
+apps/*/ios/build/
+*.xcworkspace/xcuserdata/
+
+# Android
+apps/*/android/.gradle/
+apps/*/android/app/build/
+apps/*/android/build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+flutter_01.log
+
+# macOS
+.DS_Store
+
+# Secrets
+.mcp.json
+.claude/
+
+# Build artifacts / local files
+GreenApple/
+RedApple/
+bun.lock
