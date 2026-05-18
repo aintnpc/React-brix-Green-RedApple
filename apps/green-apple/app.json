@@ -1,0 +1,88 @@
+{
+  "expo": {
+    "name": "Green Apple",
+    "slug": "green-apple",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "greenapple",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.onfit.greenapple",
+      "buildNumber": "15",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.982466337819-50nd8uqekdgphm8i3pu38cb2d8jfmdmq"
+            ]
+          }
+        ],
+        "GIDClientID": "982466337819-50nd8uqekdgphm8i3pu38cb2d8jfmdmq.apps.googleusercontent.com",
+        "NSHealthShareUsageDescription": "걸음 수 데이터를 읽어 칼로리 소모량 계산에 활용합니다."
+      },
+      "entitlements": {
+        "com.apple.developer.applesignin": [
+          "Default"
+        ],
+        "com.apple.developer.healthkit": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.onfit.greenapple"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-apple-authentication",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.982466337819-50nd8uqekdgphm8i3pu38cb2d8jfmdmq"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "식단 사진을 분석하기 위해 카메라 접근이 필요합니다."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "식단 사진을 선택하기 위해 갤러리 접근이 필요합니다."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "운동 경로를 기록하기 위해 위치 접근이 필요합니다."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#1C1C1E",
+          "sounds": []
+        }
+      ],
+      "@sentry/react-native"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@repo/ui": ["../../packages/ui/src/index.ts"],
+      "@repo/theme": ["../../packages/theme/src/index.ts"],
+      "@repo/shared": ["../../packages/shared/src/index.ts"]
+    }
+  }
+}
